@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <title>PTM</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo">SPIRAL</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="repository.html">Repository</a></li>
+          <li><a href="ptm.html" class="active">PTM</a></li>
+          <li><a href="c&m.html">C&M</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="repository.html">Repository</a></li>
+          <li><a href="ptm.html" class="active">PTM</a></li>
+          <li><a href="c&m.html">C&M</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+
+    <!-- main -->
+    <!-- Side nav -->
+    <div class="side-tab">
+      <ul>
+        <li class="list-item list-item-active" onclick="tab(event,'tab2')">
+          Parent
+        </li>
+        <li class="list-item" onclick="tab(event,'tab3')">Staff</li>
+        <li class="list-item" onclick="tab(event,'tab4')">Meetings</li>
+      </ul>
+    </div>
+
+    <!-- parent Tab -->
+    <div id="tab2" class="tabcontent">
+      <!-- <span> Parent teacher meeting portal </span>
+      <span style="float: right">Date and time</span> -->
+      <div class="row container">
+        <div class="card col m9">
+          <h4>Meeting Schedule</h4>
+          <h5>IT (3/4)</h5>
+          <div class="divider"></div>
+          <br />
+          Today's meetings
+          <br />
+          <div class="divider"></div>
+          <br />
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header" onclick="collapse(1)">VLSI</div>
+              <div class="collapsible-body" id="tnt1">
+                <span>VLSI Class details</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header" onclick="collapse(2)">WMC</div>
+              <div class="collapsible-body" id="tnt2">
+                <span>WMC Class details</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header" onclick="collapse(3)">NSC</div>
+              <div class="collapsible-body" id="tnt3">
+                <span>NSC Class details</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="divider"></div>
+          <br />
+          Tomorrow's meetings
+          <br />
+          <div class="divider"></div>
+          <br />
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header" onclick="collapse(4)">BDA</div>
+              <div class="collapsible-body" id="tnt4">
+                <span>BDA Class details</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header" onclick="collapse(5)">ENT</div>
+              <div class="collapsible-body" id="tnt5">
+                <span>ENT Class details</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header" onclick="collapse(6)">RSE</div>
+              <div class="collapsible-body" id="tnt6">
+                <span>RSE Class details</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card col m3">
+          <h4>Staff details</h4>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header" onclick="collapse(7)">VLSI</div>
+              <div class="collapsible-body" id="tnt7">
+                <span>Concerned faculty details</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header" onclick="collapse(8)">WMC</div>
+              <div class="collapsible-body" id="tnt8">
+                <span>Concerned faculty details</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header" onclick="collapse(9)">NSC</div>
+              <div class="collapsible-body" id="tnt9">
+                <span>Concerned faculty details</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staff tab -->
+    <div id="tab3" class="tabcontent">
+      <span>Staff page</span>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="card">
+          <h4 class="center">Student details</h4>
+          Checklist of students who attented the meeting and filled forms.
+          <table>
+            <tr>
+              <th>Roll Number</th>
+              <th>Name</th>
+              <th>attented</th>
+              <th>Forms</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><input type="checkbox" name="name1" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><input type="checkbox" name="name2" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><input type="checkbox" name="name3" /></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- <div class="card">
+          <h4 class="center">Task manager</h4>
+        </div> -->
+
+        <!-- <div class="card">
+          <h4 class="center">Waiting list</h4>
+        </div> -->
+
+        <!-- <div class="card">
+          <h4 class="center">List of forms to give</h4>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Meetings -->
+    <div id="tab4" class="tabcontent">
+      <span>Meetings</span>
+    </div>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Bio</h5>
+            <p class="grey-text text-lighten-4">
+              We are a team of college students working on this project. Any
+              advice or suggestions would help us to further develop this
+              project and is greatly appreciated.
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
